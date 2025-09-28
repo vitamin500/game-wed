@@ -13,17 +13,17 @@ function ComputerUserAndComputerInput(){
     } else if (userInput == 0 && computerInput == 2){
         // User: ROCK
         // COMPUTER: SCISSOR
-        console.log("User wins")
+        console.log("You Wins")
     } else if (userInput == 1 && computerInput == 0){
         // User: PAPER
         // COMPUTER: ROCK
-        console.log("user wins")
+        console.log("You Wins")
     } else if (userInput == 2 && computerInput == 1){
         // User: SCISSOR
         // COMPUTER: PAPER
-        console.log("user wins")
+        console.log("You Wins")
     } else {
-        console.log("Computer wins")
+        console.log("You Lose")
     }
 }
 
@@ -35,20 +35,37 @@ function PlayGame(){
     console.log(computerInput)
 
         if (userInput == computerInput){
-        console.log("Draw")
-    } else if (userInput == 0 && computerInput == 2){
-        // User: ROCK
-        // COMPUTER: SCISSOR
-        console.log("User wins")
-    } else if (userInput == 1 && computerInput == 0){
-        // User: PAPER
-        // COMPUTER: ROCK
-        console.log("user wins")
-    } else if (userInput == 2 && computerInput == 1){
-        // User: SCISSOR
-        // COMPUTER: PAPER
-        console.log("user wins")
-    } else {
-        console.log("Computer wins")
-    }
+            console.log("Draw")
+                textresult = document.getElementById("result_")
+                textresult.innerText = "Draw"
+        } else if (userInput == 0 && computerInput == 2){
+            // User: ROCK
+            // COMPUTER: SCISSOR
+            console.log("You wins")
+                textresult = document.getElementById("result_")
+                textresult.innerText = "You wins"
+        } else if (userInput == 1 && computerInput == 0){
+            // User: PAPER
+            // COMPUTER: ROCK
+            console.log("You wins")
+                textresult = document.getElementById("result_")
+                textresult.innerText = "You wins"
+        } else if (userInput == 2 && computerInput == 1){
+            // User: SCISSOR
+            // COMPUTER: PAPER
+            console.log("You wins")
+                textresult = document.getElementById("result_")
+                textresult.innerText = "You wins"
+        } else {
+            console.log("You Lose")
+                textresult = document.getElementById("result_")
+                textresult.innerText = "You Lose"
+        }
+
+    textUer = document.getElementById("result_user")
+    textUer.innerText = "You : " + userInput
+
+    textCom = document.getElementById("result_Com")
+    textCom.innerText = "Computer : " + computerInput
+
 }
