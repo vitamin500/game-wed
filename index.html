@@ -3,38 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-
-    <div>
-        <div class="Box"></div>
-    </div>
-
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>             
-            </button>
-        </div>
-    </nav>
-
-
-
     <center>
+        <h1 style="color: #E67E22;"">Let's play RPS!</h1>
         <p><br></p>
-        <p>ROCK: 0</p>
-        <p>PAPER: 1</p>
-        <p>SCISSOR: 2</p>
-        <label for="user-input">Enter your choice :</label>
+        <p style="color: ;">ROCK : 0</p>
+        <p style="color: ;">PAPER : 1</p>
+        <p style="color: ;">SCISSOR : 2</p>
+        <br>
+        <label for="user-input" style="color: #1A5276;">Enter your number</label>
+        <br>
         <input id="user-input" type="text" name="user-input">
-        <button onclick="PlayGame()">Submit</button>
+        <br>
+        <br>
+        <button  onclick="PlayGame()">Submit</button>
 
         <p><br></p>
         <p id="result_user"></p>
@@ -45,9 +30,5 @@
 
     </center>
 
-
-
-
-    
 </body>
 </html>
